@@ -1,6 +1,6 @@
 {
   "watch": ["src"],
-  "ext": "ts,json",
+  "ext": "js,ts,json",
   "ignore": ["src/**/*.spec.ts"],
-  "exec": "npm run build && npm run lint"
+  "exec": "npm run build"
 }
