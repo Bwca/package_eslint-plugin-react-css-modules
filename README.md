@@ -1,3 +1,5 @@
-# ts-template-repo
+# eslint-plugin-react-css-modules
 
-To be used for projects with ts :)
+## This is a WIP
+
+When finished this package is supposed to provide an eslint plugin to lint non-existant classes.
