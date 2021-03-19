@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`extractCssStringFromFile tests for css extractor should correctly extract css styles from css stylesheet 1`] = `
+".one .two .three .four {
+  color: greenyellow;
+}
+"
+`;
+
+exports[`extractCssStringFromFile tests for css extractor should correctly extract css styles from scss stylesheet 1`] = `
+".one .two .three .four {
+  color: greenyellow;
+}"
+`;

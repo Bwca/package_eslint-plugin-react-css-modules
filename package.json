@@ -36,7 +36,9 @@
   },
   "homepage": "https://github.com/Bwca/ts-template-repo#readme",
   "devDependencies": {
+    "@types/eslint": "^7.2.7",
     "@types/jest": "^25.2.2",
+    "@types/sass": "^1.16.0",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
     "@typescript-eslint/parser": "^2.34.0",
     "eslint": "^7.0.0",
