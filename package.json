@@ -1,5 +1,5 @@
 {
-  "name": "eslint-plugin-my-project",
+  "name": "eslint-plugin-react-css-modules",
   "version": "1.0.0",
   "description": "",
   "main": "./src/index.js",
@@ -7,7 +7,7 @@
     "src/**"
   ],
   "scripts": {
-    "build": "tsup src/index.js --minify --dts",
+    "build": "tsup src/index.ts --no-splitting --minify",
     "dev": "nodemon",
     "lint": "eslint */**/*.{js,ts,tsx} --quiet --fix",
     "test": "jest"
@@ -37,6 +37,7 @@
   "homepage": "https://github.com/Bwca/ts-template-repo#readme",
   "devDependencies": {
     "@types/eslint": "^7.2.7",
+    "@types/estree": "0.0.46",
     "@types/jest": "^25.2.2",
     "@types/sass": "^1.16.0",
     "@typescript-eslint/eslint-plugin": "^2.34.0",
