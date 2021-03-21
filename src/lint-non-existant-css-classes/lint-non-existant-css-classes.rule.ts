@@ -7,6 +7,7 @@ import { ImportDeclaration, Identifier, Literal } from 'estree';
 
 import { extractCssClassesToArray } from './extract-css-classes-to-array/extract-css-classes-to-array.function';
 import { extractCssStringFromFile } from './extract-css-string-from-file/extract-css-string-from-file.function';
+import { getReplacementRange } from './get-replacement-range/get-replacement-range.function';
 
 export function noNonExistantCssClasses(context: Rule.RuleContext): Rule.RuleListener {
   const cssClassesMap = new Map<string, Map<string, boolean>>();
@@ -49,9 +50,9 @@ export function noNonExistantCssClasses(context: Rule.RuleContext): Rule.RuleLis
         context.report({
           node,
           message: `The class ${propertyName} does not exist.`,
-          suggest: Array.from(cssMap.keys()).map((i) => ({
-            desc: `Replace non-existant ${propertyName} with ${i}.`,
-            fix: (fixer) => fixer.replaceTextRange(node.property.range as [number, number], i),
+          suggest: Array.from(cssMap.keys()).map((cssClass) => ({
+            desc: `Replace non-existant ${propertyName} with ${cssClass}.`,
+            fix: (fixer) => fixer.replaceTextRange(getReplacementRange(propertyName, node.property.range as [number, number]), cssClass),
           })),
         });
       }
