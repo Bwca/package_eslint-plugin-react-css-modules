@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-react-css-module-hints",
   "version": "1.0.0",
-  "description": "",
+  "description": "The plugin's goal is to warn you when you import a css/scss module and then attempt to use a class which does not exist there. Pretty simple, it addition it will provide a list of all available classes from that module in hints, so that you can fix the problem.",
   "main": "./dist/index.js",
   "files": [
     "dist/**"
@@ -12,16 +12,22 @@
     "lint": "eslint */**/*.ts --quiet --fix",
     "test": "jest"
   },
-  "husky": {
-    "hooks": {}
-  },
   "lint-staged": {
     "*.ts": [
       "eslint --fix"
     ]
   },
-  "bin": "",
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "eslintplugin",
+    "lint",
+    "react",
+    "css-modules",
+    "style",
+    "css",
+    "scss"
+  ],
   "author": {
     "name": "Volodymyr Yepishev",
     "email": "yepishevv@gmail.com"
@@ -29,12 +35,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bwca/ts-template-repo.git"
+    "url": "git+https://github.com/Bwca/eslint-plugin-react-css-modules.git"
   },
   "bugs": {
-    "url": "https://github.com/Bwca/ts-template-repo/issues"
+    "url": "https://github.com/Bwca/eslint-plugin-react-css-modules/issues"
   },
-  "homepage": "https://github.com/Bwca/ts-template-repo#readme",
+  "homepage": "https://github.com/Bwca/eslint-plugin-react-css-modules#readme",
   "devDependencies": {
     "@types/eslint": "^7.2.7",
     "@types/estree": "0.0.46",
