@@ -30,7 +30,7 @@ Then plug it in in your eslint configuration file, i.e. in `.eslintrc.json`:
 }
 ```
 
+That's it, you're ready to go.
+
 Demo:
 ![Intellisense](demo.gif)
-
-That's it, you're ready to go.
