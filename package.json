@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-css-module-hints",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The plugin's goal is to warn you when you import a css/scss module and then attempt to use a class which does not exist there. Pretty simple, it addition it will provide a list of all available classes from that module in hints, so that you can fix the problem.",
   "main": "./dist/index.js",
   "files": [

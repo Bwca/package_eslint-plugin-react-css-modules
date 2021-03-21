@@ -1,4 +1,4 @@
-# eslint-plugin-react-css-modules
+# eslint-plugin-react-css-module-hints
 
 ## Well, what is it?
 
